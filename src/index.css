@@ -1,0 +1,271 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@layer base {
+  :root {
+    /* Navy & Coral Design System */
+    --background: 220 33% 98%;
+    --foreground: 218 62% 9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 218 62% 9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 218 62% 9%;
+
+    --primary: 218 62% 9%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 33% 96%;
+    --secondary-foreground: 218 62% 9%;
+
+    --muted: 220 20% 94%;
+    --muted-foreground: 226 14% 45%;
+
+    --accent: 0 100% 71%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 20% 90%;
+    --input: 220 20% 90%;
+    --ring: 0 100% 71%;
+
+    --radius: 0.75rem;
+
+    /* Custom tokens */
+    --navy: 218 62% 9%;
+    --navy-light: 218 50% 15%;
+    --coral: 0 100% 71%;
+    --coral-dark: 0 85% 60%;
+    --gray-soft: 220 33% 98%;
+    --gray-medium: 226 14% 60%;
+    --gray-text: 226 14% 45%;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(218 62% 9% / 0.02) 0%, hsl(0 100% 71% / 0.05) 100%);
+    --gradient-cta: linear-gradient(135deg, hsl(0 100% 71%) 0%, hsl(0 85% 60%) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(220 33% 98%) 100%);
+
+    /* Shadows */
+    --shadow-sm: 0 1px 2px hsl(218 62% 9% / 0.05);
+    --shadow-md: 0 4px 12px hsl(218 62% 9% / 0.08);
+    --shadow-lg: 0 12px 40px hsl(218 62% 9% / 0.12);
+    --shadow-xl: 0 24px 60px hsl(218 62% 9% / 0.15);
+    --shadow-coral: 0 8px 30px hsl(0 100% 71% / 0.25);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 218 62% 6%;
+    --foreground: 220 33% 98%;
+
+    --card: 218 50% 10%;
+    --card-foreground: 220 33% 98%;
+
+    --popover: 218 50% 10%;
+    --popover-foreground: 220 33% 98%;
+
+    --primary: 0 0% 100%;
+    --primary-foreground: 218 62% 9%;
+
+    --secondary: 218 50% 15%;
+    --secondary-foreground: 220 33% 98%;
+
+    --muted: 218 50% 15%;
+    --muted-foreground: 226 14% 60%;
+
+    --accent: 0 100% 71%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 218 50% 15%;
+    --input: 218 50% 15%;
+    --ring: 0 100% 71%;
+
+    --navy: 220 33% 98%;
+    --navy-light: 218 50% 85%;
+    --gray-soft: 218 62% 8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-semibold tracking-tight text-foreground;
+  }
+
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl font-bold;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl font-bold;
+  }
+
+  h3 {
+    @apply text-xl md:text-2xl font-semibold;
+  }
+
+  p {
+    @apply text-muted-foreground leading-relaxed;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-padding {
+    @apply py-16 md:py-24 lg:py-32;
+  }
+
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-foreground to-muted-foreground;
+  }
+
+  .card-elevated {
+    @apply bg-card rounded-xl shadow-md hover:shadow-lg transition-all duration-300;
+  }
+
+  .glass-effect {
+    @apply bg-background/80 backdrop-blur-lg border-b border-border/50;
+  }
+
+  .animate-in-view {
+    @apply opacity-0 translate-y-6;
+    animation: fadeInUp 0.6s ease-out forwards;
+  }
+
+  .hover-lift {
+    @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-lg;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+@keyframes gradientShift {
+
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulse-soft {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.7;
+  }
+}
+
+
+@keyframes blink {
+
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+
+.animate-blink {
+  animation: blink 2s infinite;
+}
