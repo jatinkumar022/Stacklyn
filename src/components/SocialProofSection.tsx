@@ -95,9 +95,9 @@ export const SocialProofSection: React.FC = () => {
             {[...techStack, ...techStack].map((tech, index) => (
               <div
                 key={`${tech.name}-${index}`}
-                className="flex-shrink-0 mx-6 md:mx-10"
+                className="flex-shrink-0 mx-4 md:mx-10"
               >
-                <div className={`flex items-center gap-3 px-5 py-3 rounded-full border border-border hover:border-accent/30 transition-colors `}
+                <div className={`flex items-center gap-2 md:gap-3 px-4 md:px-5 py-2 md:py-3 rounded-full border border-border hover:border-accent/30 transition-colors `}
                   style={{
                     backgroundColor: `${tech.color}19`, // 20% opacity
                   }}
@@ -105,9 +105,9 @@ export const SocialProofSection: React.FC = () => {
                   <img
                     src={tech.src}
                     alt={tech.name}
-                    className="w-6 h-6"
+                    className="w-5 h-5 md:w-6 md:h-6"
                   />
-                  <span className="text-sm font-medium text-foreground whitespace-nowrap">
+                  <span className="text-xs md:text-sm font-medium text-foreground whitespace-nowrap">
                     {tech.name}
                   </span>
                 </div>
@@ -121,7 +121,7 @@ export const SocialProofSection: React.FC = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-20 py-10 border-y border-border">
             {stats.map((stat) => (
               <div key={stat.label} className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-foreground mb-2">
+                <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-2">
                   <Counter value={stat.value} />
                   {stat.suffix && <span>{stat.suffix}</span>}
                 </div>
@@ -139,8 +139,8 @@ export const SocialProofSection: React.FC = () => {
             <span className="inline-block px-4 py-1.5 mb-4 text-sm font-medium text-accent bg-accent/10 rounded-full">
               Client Testimonials
             </span>
-            <h2 className="mb-4">What Our Clients Say</h2>
-            <p className="text-lg text-muted-foreground">
+            <h2 className="mb-4 text-2xl sm:text-3xl md:text-4xl">What Our Clients Say</h2>
+            <p className="text-base sm:text-lg text-muted-foreground">
               Don't just take our word for it — hear from businesses we've
               helped grow.
             </p>

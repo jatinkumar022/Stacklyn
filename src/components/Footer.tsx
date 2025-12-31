@@ -67,7 +67,7 @@ export const Footer: React.FC = () => {
           <div className="lg:col-span-2">
             <a
               href="#home"
-              className="inline-flex items-center gap-2 text-2xl font-bold mb-4"
+              className="inline-flex items-center gap-2 text-xl sm:text-2xl font-bold mb-4"
             >
               <Code2 className="w-7 h-7 text-accent" />
               Stacklyn Solutions
@@ -174,11 +174,11 @@ export const Footer: React.FC = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-8 border-t border-primary-foreground/10 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-sm text-primary-foreground/50">
+        <div className="pt-8 border-t border-primary-foreground/10 flex flex-col md:flex-row justify-between items-center gap-6 md:gap-4">
+          <p className="text-sm text-primary-foreground/50 text-center md:text-left">
             © {new Date().getFullYear()} Stacklyn Solutions. All rights reserved.
           </p>
-          <div className="flex gap-6">
+          <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6">
             <a
               href="mailto:hello@stacklynsolutions.com"
               className="text-sm text-primary-foreground/50 hover:text-primary-foreground transition-colors"

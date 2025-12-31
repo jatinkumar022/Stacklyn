@@ -50,7 +50,7 @@ export const Header: React.FC = () => {
                 e.preventDefault();
                 scrollToSection("#home");
               }}
-              className="flex items-center gap-2 text-xl font-bold text-foreground tracking-tight hover:opacity-80 transition-opacity"
+              className="flex items-center gap-2 text-lg sm:text-xl font-bold text-foreground tracking-tight hover:opacity-80 transition-opacity"
             >
               <Code2 className="w-7 h-7 text-accent" />
               Stacklyn Solutions

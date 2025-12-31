@@ -32,23 +32,23 @@ export const CTASection: React.FC = () => {
       <div className="container-custom relative z-10">
         <AnimatedSection>
           <div className="text-center max-w-3xl mx-auto">
-            <h2 className="text-primary-foreground mb-6">
+            <h2 className="text-primary-foreground mb-6 text-2xl sm:text-3xl md:text-4xl">
               Ready to Build Your Next Project?
             </h2>
-            <p className="text-lg text-primary-foreground/70 mb-10 max-w-2xl mx-auto">
+            <p className="text-base sm:text-lg text-primary-foreground/70 mb-10 max-w-2xl mx-auto">
               Let's discuss your requirements and create a solution that helps
               your business grow. Free consultation — no strings attached.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="coral" size="xl" className="shadow-coral">
+              <Button variant="coral" size="lg" className="sm:size-xl shadow-coral">
                 <MessageSquare className="mr-2 w-5 h-5" />
                 Get Free Quote
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
               <Button
                 variant="outline"
-                size="xl"
-                className="border-primary-foreground/20 text-primary-foreground bg-transparent hover:bg-primary-foreground/10"
+                size="lg"
+                className="sm:size-xl border-primary-foreground/20 text-primary-foreground bg-transparent hover:bg-primary-foreground/10"
               >
                 <Phone className="mr-2 w-5 h-5" />
                 Schedule a Call

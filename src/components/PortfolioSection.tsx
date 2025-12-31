@@ -55,8 +55,8 @@ export const PortfolioSection: React.FC = () => {
             <span className="inline-block px-4 py-1.5 mb-4 text-sm font-medium text-accent bg-accent/10 rounded-full">
               Our Work
             </span>
-            <h2 className="mb-4">Featured Projects</h2>
-            <p className="text-lg text-muted-foreground">
+            <h2 className="mb-4 text-2xl sm:text-3xl md:text-4xl">Featured Projects</h2>
+            <p className="text-base sm:text-lg text-muted-foreground">
               A selection of projects showcasing our expertise across modern
               technologies and industries.
             </p>
@@ -98,7 +98,7 @@ export const PortfolioSection: React.FC = () => {
                   </span>
 
                   {/* Link Preview on title */}
-                  <h3 className="text-xl font-semibold mt-2 mb-2">
+                  <h3 className="text-lg sm:text-xl font-semibold mt-2 mb-2">
                     <LinkPreview
                       url={project.url}
                       imageSrc={project.previewImage}

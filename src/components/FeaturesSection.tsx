@@ -63,8 +63,8 @@ export const FeaturesSection: React.FC = () => {
             <span className="inline-block px-4 py-1.5 mb-4 text-sm font-medium text-accent bg-accent/10 rounded-full">
               Our Services
             </span>
-            <h2 className="mb-4">Full-Stack Development Expertise</h2>
-            <p className="text-lg text-muted-foreground">
+            <h2 className="mb-4 text-2xl sm:text-3xl md:text-4xl">Full-Stack Development Expertise</h2>
+            <p className="text-base sm:text-lg text-muted-foreground">
               From concept to deployment, we deliver end-to-end web solutions
               tailored to your business needs.
             </p>

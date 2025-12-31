@@ -46,8 +46,8 @@ export const ContactSection: React.FC = () => {
             <span className="inline-block px-4 py-1.5 mb-4 text-sm font-medium text-accent bg-accent/10 rounded-full">
               Contact Us
             </span>
-            <h2 className="mb-4">Let's Start Your Project</h2>
-            <p className="text-lg text-muted-foreground">
+            <h2 className="mb-4 text-2xl sm:text-3xl md:text-4xl">Let's Start Your Project</h2>
+            <p className="text-base sm:text-lg text-muted-foreground">
               Tell us about your project and we'll get back to you with a custom
               proposal within 24-48 hours.
             </p>
@@ -59,7 +59,7 @@ export const ContactSection: React.FC = () => {
           <AnimatedSection className="lg:col-span-2">
             <div className="space-y-8">
               <div>
-                <h3 className="text-xl font-semibold mb-6">Get in Touch</h3>
+                <h3 className="text-lg sm:text-xl font-semibold mb-6">Get in Touch</h3>
                 <div className="space-y-4">
                   <a
                     href="mailto:hello@stacklynsolutions.com"

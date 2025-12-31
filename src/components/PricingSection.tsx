@@ -66,8 +66,8 @@ export const PricingSection: React.FC = () => {
             <span className="inline-block px-4 py-1.5 mb-4 text-sm font-medium text-accent bg-accent/10 rounded-full">
               Pricing
             </span>
-            <h2 className="mb-4">Transparent Project Pricing</h2>
-            <p className="text-lg text-muted-foreground">
+            <h2 className="mb-4 text-2xl sm:text-3xl md:text-4xl">Transparent Project Pricing</h2>
+            <p className="text-base sm:text-lg text-muted-foreground">
               Every project is unique. Get a custom quote tailored to your
               specific requirements and budget.
             </p>
@@ -104,7 +104,7 @@ export const PricingSection: React.FC = () => {
                 </div>
 
                 <div className="mb-6">
-                  <span className="text-3xl font-bold text-foreground">
+                  <span className="text-2xl sm:text-3xl font-bold text-foreground">
                     {pkg.price}
                   </span>
                   <p className="text-xs text-muted-foreground mt-1">

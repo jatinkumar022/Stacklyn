@@ -75,8 +75,8 @@ export const HeroSection: React.FC = () => {
     >
       {/* Animated Background */}
       <div className="absolute inset-0 bg-gradient-hero" />
-      <div className="absolute top-20 right-0 w-[600px] h-[600px] rounded-full bg-accent/5 blur-3xl animate-pulse-soft" />
-      <div className="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full bg-primary/5 blur-3xl" />
+      <div className="absolute top-20 right-0 w-[300px] md:w-[600px] h-[300px] md:h-[600px] rounded-full bg-accent/5 blur-3xl animate-pulse-soft" />
+      <div className="absolute bottom-0 left-0 w-[200px] md:w-[400px] h-[200px] md:h-[400px] rounded-full bg-primary/5 blur-3xl" />
 
       {/* Code pattern background */}
       <div
@@ -98,7 +98,7 @@ export const HeroSection: React.FC = () => {
             </AnimatedSection>
 
             <AnimatedSection delay={100}>
-              <h1 className="text-balance mb-6 leading-[1.1]">
+              <h1 className="text-balance mb-6 leading-[1.1] text-4xl sm:text-5xl lg:text-6xl">
                 We Build{" "}
                 <span className="relative">
                   Digital Solutions
@@ -161,7 +161,7 @@ export const HeroSection: React.FC = () => {
 
 
 
-          <AnimatedSection delay={200} animation="slide-in-right">
+          <AnimatedSection delay={200} animation="slide-in-right" className="hidden lg:block">
             <div className="relative lg:pl-8">
               {/* Main Card */}
               <div className="relative bg-card rounded-2xl shadow-float p-6 border border-border/50">
@@ -265,7 +265,7 @@ export const HeroSection: React.FC = () => {
                 </div>
               </div>
 
-              <div className="absolute bottom-14 -right-4 bg-card rounded-xl shadow-elevated p-3 border border-border/50 animate-float" style={{ animationDelay: "1.5s" }}>
+              <div className="absolute bottom-14 -right-4 bg-card rounded-xl shadow-elevated p-3 border border-border/50 animate-float hidden sm:flex" style={{ animationDelay: "1.5s" }}>
                 <div className="flex items-center gap-2">
                   <img src={NextJS} alt="Next.js" className="w-8 h-8" />
                   <span className="text-sm font-medium">Next.js</span>
